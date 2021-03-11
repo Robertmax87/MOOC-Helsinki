@@ -1,0 +1,22 @@
+public class Main {
+
+    public static void main(String[] args) { 
+        int b= 4;
+        int c= 5;
+        String dinosaur = "=" + (b + c);
+        System.out.println(b + "+" + c + dinosaur);
+
+    }
+}
+package com.beg;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int b= 4;
+        int c= 5;
+        String dinosaur = "=" + (b * c);
+        System.out.println(b + "*" + c + dinosaur);
+
+    }
+}
