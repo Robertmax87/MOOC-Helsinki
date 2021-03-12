@@ -1,0 +1,21 @@
+package com.beg;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        String name = reader.nextLine();
+
+        System.out.println("Type a number:");
+        int first = Integer.parseInt(reader.nextLine());
+
+        System.out.println("Type another number:");
+        int second = Integer.parseInt(reader.nextLine());
+
+        int max = Math.max(first, second);
+        System.out.println("Max of numbers:" + max);
+
+
+    }
+}
