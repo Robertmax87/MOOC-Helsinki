@@ -1,0 +1,12 @@
+package com.beg;
+
+public class Main{
+    public static void main(String[] arg){
+        System.out.println("Type a number: 1");
+        int number = 1;
+        if (number > 0){
+            System.out.println("This number is positive");
+        } else { System.out.println("This number is negative");
+    }
+}
+}
