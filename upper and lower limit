@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] arg) {
+        Scanner reader = new Scanner(System.in);
+        System.out.println("What is our starting number?:");
+        int start = Integer.parseInt(reader.nextLine());
+
+        System.out.println("Up to what number?:");
+        int up = Integer.parseInt(reader.nextLine());
+
+        int i = start;
+        while (i <= up && i >= start){
+            System.out.println(i);
+            i = i +1;
+        }
+    }
+}
