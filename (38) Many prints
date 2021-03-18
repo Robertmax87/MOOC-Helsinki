@@ -1,0 +1,21 @@
+package com.beg;
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] arg){
+        Scanner reader = new Scanner(System.in);
+
+        System.out.println("How many?");
+        int numb = Integer.parseInt(reader.nextLine());
+        int screech = 0;
+        while (screech < numb){
+            lazertext();
+            screech++;
+            
+        }
+    }
+    public static void lazertext(){
+        System.out.println("rollin dolo w/ my goPro");
+    }
+}
