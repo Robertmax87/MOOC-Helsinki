@@ -1,0 +1,23 @@
+package com.beg;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] arg) {
+        Scanner reader = new Scanner(System.in);
+
+        System.out.println("Type a word: ");
+        String scan = reader.nextLine();
+
+        System.out.println("Type the second word: ");
+        String drip = reader.nextLine();
+
+        if (scan.indexOf(drip) >= 0){
+            System.out.println("The word " + drip +" is found in " + scan);
+        } else {
+            System.out.println("The word " + drip +" is not found in " + scan);
+        }
+
+
+        }
+    }
