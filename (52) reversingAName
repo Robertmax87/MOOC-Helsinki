@@ -1,0 +1,20 @@
+package com.beg;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] arg) {
+        Scanner reader = new Scanner(System.in);
+
+        System.out.println("What is your name?");
+        String scan = reader.nextLine();
+
+        int scanny = scan.length() - 1;
+        int tree = 0;
+
+        while (scanny>=tree){
+            System.out.print(scan.charAt(scanny));
+            scanny = scanny - 1;
+        }
+    }
+}
