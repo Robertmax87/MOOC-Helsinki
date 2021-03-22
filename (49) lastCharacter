@@ -1,0 +1,18 @@
+package com.beg;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] arg) {
+        lastCharacter("Bobbybottleservice");
+
+    }
+    public static char lastCharacter(String text) {
+        int laster = text.length();
+        int poppy = laster - 1;
+        char trial = text.charAt(poppy);
+        System.out.println(trial);
+        return trial;
+
+    }
+}
