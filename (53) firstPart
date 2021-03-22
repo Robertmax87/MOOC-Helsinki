@@ -1,0 +1,19 @@
+package com.beg;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] arg) {
+        Scanner reader = new Scanner(System.in);
+
+        System.out.println("Type a word: ");
+        String scan = reader.nextLine();
+
+        System.out.println("Length of the first part");
+        int send = Integer.parseInt(reader.nextLine());
+
+
+        System.out.println("Result: " + scan.substring(0,send));
+
+        }
+    }
