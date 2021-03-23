@@ -1,0 +1,30 @@
+package com.beg;
+
+import java.util.Scanner;
+import java.util.Collections;
+import java.util.ArrayList;
+
+public class Main{
+    public static void main(String[] arg){
+        ArrayList<String>scribble = new ArrayList<String>();
+        Scanner reader = new Scanner(System.in);
+
+        while(true){
+            System.out.println("Type a word: ");
+            String sys = reader.nextLine();
+            if (sys.equals("")){
+                break;
+            }
+            scribble.add(sys);
+        }
+        System.out.println("Here are your words back to front");
+        int z = 0;
+        int tree = scribble.size();
+        Collections.reverse(scribble);
+        while (tree>z){
+            System.out.println(scribble.get(z));
+            z++;
+
+        }
+    }
+}
