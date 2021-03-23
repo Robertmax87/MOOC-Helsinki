@@ -1,0 +1,37 @@
+package com.beg;
+
+import java.util.Scanner;
+
+import java.util.ArrayList;
+
+public class Main{
+    public static void main(String[] arg){
+        Scanner reader = new Scanner(System.in);
+        ArrayList<String>word = new ArrayList<String>();
+
+        while (true) {
+            System.out.print("Type a word: ");
+            String bi = reader.nextLine();
+         if (bi.equals("")){
+             break;
+         }
+         word.add(bi);
+        }
+        System.out.println("The words you added are:");
+        int creep = 0;
+        int lens = word.size();
+        while (lens>creep) {
+            System.out.println(word.get(creep));
+            creep++;
+        }
+
+
+
+
+
+
+    }
+
+
+
+        }
