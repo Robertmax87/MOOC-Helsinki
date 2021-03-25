@@ -1,0 +1,32 @@
+package com.beg;
+
+import java.util.Scanner;
+import java.util.Collections;
+import java.util.ArrayList;
+
+public class Main{
+    public static void main(String[] arg){
+        ArrayList<String>lister = new ArrayList<String>();
+        Scanner reader = new Scanner(System.in);
+
+        while(true){
+            System.out.println("Type a word:");
+            String word = reader.nextLine();
+            lister.add(word);
+
+            if (word.equals("")) {
+                break;
+            }
+
+
+        }
+        Collections.reverse(lister);
+        int start = 0;
+        int sie = lister.size();
+        System.out.println("The words you typed are:");
+        while (start<sie){
+            System.out.println(lister.get(start));
+            start++;
+        }
+    }
+}
