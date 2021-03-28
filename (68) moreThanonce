@@ -1,0 +1,27 @@
+package com.beg;
+
+import java.util.Scanner;
+import java.util.Collections;
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> list1 = new ArrayList<Integer>();
+        ArrayList<Integer> list2 = new ArrayList<Integer>();
+
+        Collections.addAll(list1,5,4,3,2,4,5,6,6,9,46,7647,34,4);
+        Collections.sort(list1);
+        Collections.addAll(list2, 3,4,342,34,432,235,542);
+        Collections.sort(list2);
+        smartList(list1,list2);
+        System.out.print(list2);
+    }
+
+    public static void smartList(ArrayList<Integer> list1, ArrayList<Integer> list2) {
+        for (Integer i : list1) {
+            if (!list2.contains(i)) {
+                list2.add(i);
+            }
+            }
+
+        }
