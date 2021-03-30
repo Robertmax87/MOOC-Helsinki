@@ -1,0 +1,14 @@
+public class Multiplyer {
+    private int firstint;
+    public Multiplyer(int first){
+        this.firstint = first;
+
+    }
+    public int multiply(int d){
+        int b = d * this.firstint;
+        System.out.println(b);
+        return b;
+
+
+    }
+}
