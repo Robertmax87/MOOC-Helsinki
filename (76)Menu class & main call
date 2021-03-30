@@ -1,0 +1,39 @@
+package com.beg;
+
+import java.util.Scanner;
+import java.util.Collections;
+import java.util.ArrayList;
+
+public class Main{
+    public static void main(String[] args){
+        Menu meats = new Menu();
+        meats.addmeal("beef");
+        meats.addmeal("chicken");
+        meats.addmeal("pork");
+        meats.printmeals();
+
+    }
+
+
+
+    }
+    
+    package com.beg;
+import java.util.ArrayList;
+
+public class Menu {
+    private ArrayList meals;
+    public Menu (){
+        this.meals = new ArrayList<String>();
+
+    }
+    public void printmeals(){
+        System.out.println("Menu" + "\n" + this.meals);
+    }
+    public void addmeal(String meal){
+        this.meals.add(meal);
+    }
+    public void clearmenu(){
+        this.meals.clear();
+    }
+}
