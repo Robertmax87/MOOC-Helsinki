@@ -1,0 +1,17 @@
+package com.beg;
+
+import java.util.ArrayList;
+
+public class NumberStatistics {
+    private int numberof;
+    public NumberStatistics(){
+    this.numberof = 0;
+    }
+    public void addNumber(int number){
+    this.numberof = 1 + this.numberof;
+    }
+    public int amountNumber(){
+    return this.numberof;
+    }
+    
+}
