@@ -1,0 +1,40 @@
+package com.beg;
+
+public class Apartment {
+    private int rooms;
+    private int squareMeters;
+    private int pricePerSquareMeter;
+
+    public Apartment(int rooms, int squareMeters, int pricePerSquareMeter) {
+        this.rooms = rooms;
+        this.squareMeters = squareMeters;
+        this.pricePerSquareMeter = pricePerSquareMeter;
+    }
+
+    public boolean larger(Apartment otherApartment) {
+        int rooms = otherApartment.rooms;
+        int sqmeters = otherApartment.squareMeters;
+        if (this.rooms > rooms && this.squareMeters > sqmeters) {
+            return true;
+        } else if (this.rooms > rooms && this.squareMeters < sqmeters) {
+            return false;
+        } else {
+            return false;
+        }
+    }
+
+    public int priceDifference(Apartment otherApartment) {
+        int otherPrice = otherApartment.pricePerSquareMeter;
+        return Math.abs(otherPrice - this.pricePerSquareMeter);
+    }
+
+    public boolean moreExpensiveThan(Apartment otherApartment) {
+        int other = (otherApartment.squareMeters * otherApartment.pricePerSquareMeter);
+        int ours = (this.pricePerSquareMeter * this.squareMeters);
+        if (ours > other){
+            return true;
+        }else{
+            return false;
+        }
+    }
+}
