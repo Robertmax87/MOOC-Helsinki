@@ -31,13 +31,15 @@ public class Main {
         while(true) {
             System.out.println("What is your name student?:");
             String name = reader.nextLine();
-            if (name == "") {
-                System.out.print(list);
+            if (name == ""){
+               break;
             }
             System.out.println("What is your student id number?");
             String number = reader.nextLine();
             Student stu = new Student(name, number);
             list.add(stu);
         }
+        System.out.print(list);
+    }
+
         }
-}
