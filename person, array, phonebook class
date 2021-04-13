@@ -1,0 +1,10 @@
+package com.beg;
+import java.util.ArrayList;
+public class Phonebook {
+    private ArrayList<Person> list;
+    public Phonebook(){
+    }
+    public void add(Person){
+        list.add(Person);
+    }
+}
