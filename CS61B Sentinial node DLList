@@ -1,0 +1,60 @@
+package com.beg;
+
+public class IntList<BleepBlorp> {
+    public class IntNode{
+        public IntNode previous;
+        public BleepBlorp item;
+        public IntNode next;
+        public IntNode(IntNode p, BleepBlorp i, IntNode n){
+            item = i;
+            next = n;
+            previous = p;
+        }
+    }
+    public IntNode first;
+    public IntNode last;
+    public int size;
+    public IntNode sentenial;
+    public BleepBlorp sent;
+
+    public IntList(){
+
+        sentenial = new IntNode(null,sent,null);
+    }
+    public IntList(BleepBlorp x){
+        first = new IntNode(sentenial ,x, null);
+       size = 1;
+    }
+    public BleepBlorp getFirst(){
+        return first.item;
+    }
+    public void addLast(BleepBlorp x) {
+        size += 1;
+
+        if (first == null) {
+            first = new IntNode(sentenial, x, sentenial);
+
+        } else {
+            IntNode p = first;
+            while (p.next != null) {
+                p = p.next;
+            }
+
+            p.next = new IntNode(p, x, sentenial);
+        }
+    }
+
+    public int size(){
+        return size;
+    }
+
+
+    public String toString() {
+        return "IntList{" +
+                "first=" + first +
+                ", last=" + last +
+                ", size=" + size +
+                '}';
+    }
+}
+
