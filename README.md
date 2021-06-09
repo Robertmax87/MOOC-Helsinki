@@ -1,2 +1,2 @@
-# MOOC-Helsinki
-Helsinki exercises 
+# Java Practice
+ exercises 
